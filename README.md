@@ -1,4 +1,4 @@
-# laikas
+# Laikas
 
 ## Project setup
 ```
