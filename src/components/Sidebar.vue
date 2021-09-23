@@ -1,9 +1,9 @@
 <template>
-    <button class="tools">
+    <button class="tools" v-on:click="chronoTime()">
         <img src="../assets/chronometres.png" alt="Chronometre">
         <p>Chronomètre</p>
     </button>
-    <button class="tools">
+    <button class="tools" v-on:click="minuteTime()">
         <img src="../assets/minuteur.png" alt="Minuteur">
         <p>Minuteur (SOON)</p>
     </button>
@@ -12,7 +12,15 @@
 <script>
 export default {
     name: 'Sidebar',
-    
+    methods: {
+        chronoTime() {
+            this.$emit('chrono')
+        },
+
+        minuteTime() {
+            this.$emit('minu')
+        },
+    }
 }
 </script>
 
