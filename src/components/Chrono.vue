@@ -5,8 +5,8 @@
     </div>
     <div id="choice">
         <button v-on:click="go()">GO</button>
-        <button v-on:click="stop()" v-if="this.stopButton">STOP</button>
-        <button v-on:click="reset()" v-if="this.resetButton">RESET</button>
+        <button v-on:click="stop()" v-if="stopButton">STOP</button>
+        <button v-on:click="reset()" v-if="resetButton">RESET</button>
     </div>
 </template>
 
