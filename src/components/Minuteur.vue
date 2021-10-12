@@ -128,7 +128,8 @@ export default {
         position: absolute;
         top: 25%;
         left: 25%;
-        background-color: grey;
+        background-color: whitesmoke;
+        border: solid 1px black;
         width: 50%;
         height: 50%;
     }

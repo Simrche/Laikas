@@ -62,15 +62,16 @@ export default {
 
 #sidebarApp {
   width: 20%;
-  background-color: red;
   padding-bottom: 100px;
   height: 80vh;
+  border: transparent 2px solid;
+  box-shadow: rgb(202, 202, 202) 4px 4px 5px;
 }
 
 #application {
   width: 70%;
-  background-color: blue;
   padding-bottom: 100px;
   height: 80vh;
+  border: grey 2px solid;
 }
 </style>
