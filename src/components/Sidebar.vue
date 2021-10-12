@@ -5,7 +5,7 @@
     </button>
     <button class="tools" v-on:click="minuteTime()">
         <img src="../assets/minuteur.png" alt="Minuteur">
-        <p>Minuteur (SOON)</p>
+        <p>Minuteur</p>
     </button>
 </template>
 
