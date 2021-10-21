@@ -73,6 +73,7 @@ export default {
 <style scoped>
     h1{
         font-size: 60px;
+        font-family: "poppins";
     }
 
     p {
@@ -96,7 +97,31 @@ export default {
     }
 
     #choice button {
-        height: 50px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
+        font-family: "poppins";
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #choice button:first-child {
+        background-color: green;
+        color: white;
+    }
+
+    #choice button:first-child:hover {
+        background-color: rgb(0, 155, 0);
+        transition: 0.2s;
+    }
+
+    #choice button:nth-child(2) {
+        background-color: rgb(155, 0, 0);
+        color: white;
+    }
+
+    #choice button:nth-child(2):hover {
+        background-color: rgb(179, 0, 0);
     }
 </style>

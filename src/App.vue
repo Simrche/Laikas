@@ -60,18 +60,28 @@ export default {
   justify-content: space-around;
 }
 
+body {
+  background-color: rgb(132, 132, 255);
+}
+
 #sidebarApp {
-  width: 20%;
-  padding-bottom: 100px;
-  height: 80vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 120px;
+  background-color: rgb(209, 209, 209);
   border: transparent 2px solid;
-  box-shadow: rgb(202, 202, 202) 4px 4px 5px;
+  box-shadow: rgb(90, 90, 90) 4px 0px 5px;
 }
 
 #application {
-  width: 70%;
+  width: 90%;
+  margin-left: 7%;
   padding-bottom: 100px;
   height: 80vh;
   border: grey 2px solid;
+  background-color: rgb(209, 209, 209);
+  border-radius: 25px;
 }
 </style>

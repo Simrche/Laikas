@@ -9,21 +9,21 @@
     </div>
     <div id="choice" v-if="!choice">
         <div class="choiceIn">
-            <label for="minute">Minute :</label>
+            <label for="minute">Minute : </label>
             <select name="minute" id="" v-model="minute">
                 <option v-for="number in numbers" :key="number" v-bind:value="number">{{number}}</option>
             </select>
         </div>
         <div class="choiceIn">
-            <label for="seconde" >Seconde :</label>
+            <label for="seconde" >Seconde : </label>
             <select name="seconde" id="" v-model="seconde">
                 <option v-for="number in numbers" :key="number" v-bind:value="number">{{number}}</option>
             </select>
         </div>
-        <button v-on:click="go">GO</button>
+        <button v-on:click="go" id="goButton">GO</button>
     </div>
 
-    <div id="finish" v-if="this.finishPopUp">
+    <div id="finish" v-if="this.finishPopUp" v-on:click="finish">
         <h2>FINISH</h2>
         <button v-on:click="finish" v-if="this.finishPopUp">Fermer</button>
     </div>
@@ -78,6 +78,7 @@ export default {
 <style scoped>
     h1{
         font-size: 60px;
+        font-family: "poppins";
     }
 
     p {
@@ -92,8 +93,19 @@ export default {
     }
 
     #stopButton {
-        width: 200px;
-        height: 50px;
+        height: 100px;
+        width: 100px;
+        font-family: "poppins";
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: rgb(155, 0, 0);
+        color: white;
+    }
+
+    #stopButton:hover {
+        background-color: rgb(179, 0, 0);
     }
 
     #timeTime {
@@ -132,6 +144,21 @@ export default {
         border: solid 1px black;
         width: 50%;
         height: 50%;
+    }
+
+    #goButton {
+        font-family: "poppins";
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: green;
+        color: white;
+    }
+
+    #goButton:hover {
+        background-color: rgb(0, 155, 0);
+        transition: 0.2s;
     }
     
 </style>
